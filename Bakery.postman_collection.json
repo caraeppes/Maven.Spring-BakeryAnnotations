@@ -1,0 +1,384 @@
+{
+	"info": {
+		"_postman_id": "a22db719-472b-4092-b4d3-e8315e5c4b5b",
+		"name": "Bakery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Blueberry Muffin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"flavor\":\"Blueberry\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/muffins/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"muffins",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Chocolate Chip Muffin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"flavor\":\"Chocolate chip\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/muffins/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"muffins",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create banana nut muffin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"flavor\":\"banana nut\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/muffins/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"muffins",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all muffins",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8081/muffins/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"muffins",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Muffin Id #1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8081/muffins/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"muffins",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Muffin #1 to Raspberry",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"flavor\":\"raspberry\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/muffins/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"muffins",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete muffin with id 1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8081/muffins/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"muffins",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create baker Cara",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Cara\",\n\t\"employeeId\":\"618\",\n\t\"specialty\":\"muffins\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/bakers/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"bakers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Baker Davis",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Davis\",\n\t\"employeeId\":\"333\",\n\t\"specialty\":\"brownies\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/bakers/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"bakers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all bakers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Davis\",\n\t\"employeeId\":\"333\",\n\t\"specialty\":\"brownies\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/bakers/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"bakers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Davis's specialty to cookies",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Davis\",\n\t\"employeeId\":\"333\",\n\t\"specialty\":\"cookies\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/bakers/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"bakers",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Baker with ID #4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Davis\",\n\t\"employeeId\":\"333\",\n\t\"specialty\":\"cookies\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/bakers/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"bakers",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete baker with Id #4",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Davis\",\n\t\"employeeId\":\"333\",\n\t\"specialty\":\"cookies\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/bakers/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"bakers",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
